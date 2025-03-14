@@ -4,14 +4,16 @@ public class Cliente {
     private Long id;
     private String nome;
     private Integer idade;
+    private String endereco;
 
     // Construtores
     public Cliente() {}
 
-    public Cliente(Long id, String nome, int idade) {
+    public Cliente(Long id, String nome, int idade, String endereco) {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
+        this.endereco = endereco;
     }
 
     // Getters e Setters
@@ -37,5 +39,13 @@ public class Cliente {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }
